@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnIntentMain"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rectangle_button"
+        android:backgroundTint="@color/indigoDark"
+        android:text="@string/main"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBatteryIntent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBatteryIntent"
+        app:layout_constraintTop_toTopOf="@+id/btnBatteryIntent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBatteryIntent"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rectangle_button"
+        android:backgroundTint="@color/indigo"
+        android:text="@string/battery"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnIntentMain"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textMapMenu"
+        android:layout_width="258dp"
+        android:layout_height="102dp"
+        android:gravity="center"
+        android:text="@string/textMainMenu"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.500"
+   />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

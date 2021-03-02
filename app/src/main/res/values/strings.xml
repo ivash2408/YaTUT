@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">YaTuT_Kontlin</string>
+    <string name="battery">Battery</string>
+    <string name="button">Button</string>
+    <string name="main">Main</string>
+    <string name="textBattery">заряда зватит на Х часов</string>
+    <string name="textMainMenu">MainMenu</string>
+</resources>

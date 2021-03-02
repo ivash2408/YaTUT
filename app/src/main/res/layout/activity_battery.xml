@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp"
+    tools:context=".BatteryActivity">
+
+    <ImageView
+        android:id="@+id/ivBattery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:src="@drawable/b100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.284" />
+
+    <TextView
+        android:id="@+id/tvBatteryCharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivBattery"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.400" />
+
+    <SeekBar
+        android:id="@+id/sbBatteryCharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:max="100"
+
+        android:min="0"
+        android:progress="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.817" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnIntentMain"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rectangle_button"
+        android:backgroundTint="@color/indigo"
+        android:text="@string/main"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBatteryIntent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBatteryIntent"
+        app:layout_constraintTop_toTopOf="@+id/btnBatteryIntent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBatteryIntent"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rectangle_button"
+        android:backgroundTint="@color/indigoDark"
+        android:text="@string/battery"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnIntentMain"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textBattery"
+        android:layout_width="222dp"
+        android:layout_height="128dp"
+        android:gravity="center"
+        android:text="@string/textBattery"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBatteryCharge"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
